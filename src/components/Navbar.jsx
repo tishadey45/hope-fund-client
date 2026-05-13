@@ -4,8 +4,11 @@ import logo from "../assets/logo.png";
 
 export default function Navbar() {
   return (
-    <div className="max-lg:collapse bg-emerald-50 
-     shadow-sm  rounded-md">
+    <div
+      className="max-lg:collapse bg-linear-to-r from-blue-400 to-cyan-100 text-white 
+                 transition-all duration-300 
+     shadow-sm  rounded-md"
+    >
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
@@ -29,7 +32,9 @@ export default function Navbar() {
               />
             </svg>
           </label>
-          <Link href="/"><Image src={logo} alt="logo" width={70} height={70}></Image></Link>
+          <Link href="/">
+            <Image src={logo} alt="logo" width={80} height={80}></Image>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-emerald-500 font-bold">
