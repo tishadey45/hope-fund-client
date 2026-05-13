@@ -4,7 +4,8 @@ import logo from "../assets/logo.png";
 
 export default function Navbar() {
   return (
-    <div className="max-lg:collapse bg-emerald-50 lg:mb-48 shadow-sm w-full rounded-md">
+    <div className="max-lg:collapse bg-emerald-50 
+     shadow-sm  rounded-md">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
       <label
         htmlFor="navbar-1-toggle"
