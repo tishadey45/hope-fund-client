@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import banner from "../assets/banner.png";
 
 export default function Banner() {
@@ -25,19 +26,23 @@ export default function Banner() {
             campaigns.
           </p>
           <div className="flex flex-col mt-4 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <button
-              className="px-6 py-3 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full 
+            <Link href="/all-campaigns">
+              <button
+                className="px-6 py-3 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full 
                  transition-all duration-300 hover:scale-110 hover:shadow-xl"
-            >
-              All Campaigns
-            </button>
+              >
+                All Campaigns
+              </button>
+            </Link>
 
-            <button
-              className="px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 text-white rounded-full 
+            <Link href="/donate">
+              <button
+                className="px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 text-white rounded-full 
                         transition-all duration-300 hover:scale-110 hover:shadow-xl ml-3"
-            >
-              Donate Now
-            </button>
+              >
+                Donate Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -42,11 +42,17 @@ export default function Navbar() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/campaigns">All campains</Link>
+              <Link href="/all-campaigns">All campaigns</Link>
             </li>
             <li>
-              <Link href="/dashboard">Dashboard</Link>
+              <Link href="/register">Register</Link>
             </li>
+            <li>
+              <Link href="/login">Login</Link>
+            </li>
+            {/* <li>
+              <Link href="/dashboard">Dashboard</Link>
+            </li> */}
           </ul>
         </div>
       </div>
